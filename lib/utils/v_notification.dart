@@ -75,7 +75,7 @@ class NotificationService {
       scheduleAlarmDateTime = scheduleAlarmDateTime.add(Duration(days: 1));
     final String? alarmUri = await platform.invokeMethod<String>('getAlarmUri');
     var tempRing =
-    alarm.ringtone == 'slow_spring_board' ? UriAndroidNotificationSound(alarmUri!) :
+    alarm.ringtone == 'uri_sound' ? UriAndroidNotificationSound(alarmUri!) :
     RawResourceAndroidNotificationSound(alarm.ringtone);
     var androidPlatformChannelSpecifics = AndroidNotificationDetails(
       alarm.id.toString(),

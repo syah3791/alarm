@@ -9,7 +9,7 @@ import 'package:flutter/material.dart';
 
 class AlarmSate with ChangeNotifier{
   List<Alarm> _alarmList = [];
-  List<String> _ringtonList = ['a_long_cold_sting','slow_spring_board'];
+  List<String> _ringtonList = ['uri_sound','a_long_cold_sting','slow_spring_board'];
   bool _isOn = false;
   bool _isSaveRespon = true;
 
